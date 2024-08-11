@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Extraño</title>
+    <script>
+        function insistir() {
+            let response = '';
+            while (response.toLowerCase() !== 'también te extraño') {
+                alert('Te extraño');
+                response = prompt('Te extraño. Responde "también te extraño" para salir.');
+            }
+            alert('Gracias por tu respuesta. ¡Cuidate!');
+        }
+
+        window.onload = function() {
+            insistir();
+        }
+
+        window.onbeforeunload = function() {
+            return "No te vayas sin decir que también me extrañas.";
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Te Extraño</h1>
+</body>
+
+</html>
